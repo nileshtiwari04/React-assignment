@@ -1,0 +1,13 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.card-container{
+  display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 30px;
+   padding: 20px;
+}
