@@ -1,0 +1,22 @@
+.quoteContainer{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0; 
+        background-color: #4e3636;
+        color: #f4f4f4;
+        font-size: 30px;
+        padding: 20px;
+        margin-top:  15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    
+      }
+  
+      .author {
+        margin-top: 20px;
+        font-size: 1em;
+        font-style: italic;
+        color: #71a1d4;
+        text-align: center;
+      }
