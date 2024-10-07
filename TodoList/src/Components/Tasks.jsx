@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Tasks = (props) => {
   // Initiallizing the check Array with false
@@ -21,12 +21,12 @@ const Tasks = (props) => {
   };
 
   const notify = () => {
-    toast("TASK Deleted Successfully")
+    toast("TASK Deleted Successfully");
   };
 
   return (
     <div className="w-full flex flex-col justify-center items-center shadow-xl p-3 rounded-md hover:shadow-2xl duration-300">
-        <ToastContainer />
+      <ToastContainer />
       {props.itemList.map((item, index) => {
         return (
           <div
@@ -34,12 +34,12 @@ const Tasks = (props) => {
             className="w-3/5 py-1 flex justify-between items-center"
           >
             <div className=" w-[80px] h-10 gap-x-2 flex jus tify-center items-center ">
-            <input
-  className="w-3 h-3 flex-shrink-0"
-  type="checkbox"
-  checked={check[index]} // Bind to the specific index of the check array
-  onChange={() => handleCheckChange(index)} // Handle checkbox changes
-/>
+              <input
+                className="w-3 h-3 flex-shrink-0"
+                type="checkbox"
+                checked={check[index]} // Bind to the specific index of the check array
+                onChange={() => handleCheckChange(index)} // Handle checkbox changes
+              />
               {/* {console.log(item)} */}
               <p
                 className={`text-2xl font-semibold text-teal-900 ${
@@ -50,14 +50,16 @@ const Tasks = (props) => {
               </p>
             </div>
 
-            <button className="bg-teal-800 px-3 py-1 rounded-lg text-teal-100 font-semibold active:scale-75 active:bg-violet-400 active:text-violet-900 duration-100 outline-none" onClick={() => handleDeleteBtn(item.id, index)}>
+            <button
+              className="bg-teal-800 px-3 py-1 rounded-lg text-teal-100 font-semibold active:scale-75 active:bg-violet-400 active:text-violet-900 duration-100 outline-none"
+              onClick={() => handleDeleteBtn(item.id, index)}
+            >
               Delete
             </button>
           </div>
         );
       })}
     </div>
-    
   );
 };
 
