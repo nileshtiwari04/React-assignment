@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  gap: 6rem;
+  text-align: center;
+  justify-content: center;
+}
+.employeelist{
+  border: 4px solid rgb(46, 45, 45);
+  padding: 16px;
+}
+.teamlist{
+  border: 4px solid black;
+  padding: 16px;
+}

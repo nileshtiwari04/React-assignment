@@ -1,0 +1,6 @@
+.tcard{
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgb(168, 167, 167);
+    gap: 2rem;
+    /* border: 2px solid red; */
+}
